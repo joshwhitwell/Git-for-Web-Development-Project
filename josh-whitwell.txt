@@ -1,0 +1,130 @@
+Link to finished codepen: 
+
+    1. What is Semantic HTML? 
+    Semantic HTML refers to HTML elements that carry meaning. Examples of semantic HTML tags are <header>, <p>, and <nav>. These tags are considered semantic because the tag name designates the meaning of the element content. Semantic HTML is important for describing the content of a web page to other developers, and also for compatability with screen readers and for optimizing search engine functionality.
+
+    2. What is HTML used for? 
+    HTML stands for hyper-text markup language and is used to communicate to the browser how to graphically render different elements of a webpage.
+
+    3. What is an attribute and where do we put it? 
+    An attribute is used to specify additional information associated with an HTML element that the browser needs to properly render the HTML, such as the target URL of an anchor tag. Attributes are placed in the opening tag of an HTML element in the following syntax: attributeName="value". 
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    The h1 tag is used for the main header / title of a web page. It should only be used once per page.
+
+    5. Name two tags that have required attributes
+    The anchor tag (requires href attribute) and the image tag (requires src attribute).
+
+    6. What do we put in the head of our HTML document?
+    The head element of an HTML document contains metadata about the document that will not be displayed on the webpage. Information such as the character set, language, and styles go in the head section.
+
+    7. What is an id? 
+    An id is an attribute of an HTML element that is used to specify a unique element. A given id can only be used once per page. Ids can be used to anchor to a single element on a webpage.
+
+    8. What elements can I add an id to? 
+    Any element can take an ID except for a few meta level HTML elements such as <head> <title> <meta> etc, however each id can only be used once.
+
+    9. How many times can I use the same id on a page? 
+    An id can only be used once on page.
+
+    10. What is a class? 
+    A class is used to select and group multiple elements on a page. Classes are used to add styles to multiple elements and to integrate with javascript functionality.
+
+    11. What elements can I add a class to? 
+    Like id classes can be added to any element except for a handful of meta level elements such as <html> <meta> etc. 
+
+    12. How many times can I use the same class on a page? 
+    A given class can be used unlimited times on a web page.
+
+    13. How do I get my link to open in a new tab?
+    In the opening tag of the anchor element, add the attribute target="_blank".
+
+    14. What is the alt attribute in the image tag used for?
+    The alt attribute in the image tag specifies the text that should be displayed if an image cannot be rendered by the browser for whatever reason. The alt attribute also is used with screen readers for accessibility reasons.
+
+    15. How do I reference an id?
+    To reference an id, such as in CSS styling, use a hashtag # followed by the id name: #idName.
+
+    16. What is the difference between a section and a div?
+    A section is a semantic tag and div is a non-semantic tag. Div is primarily used to apply styles and contain other elements, whereas section is used to semantically denote a given content.
+
+    17. What is CSS used for? 
+    CSS stands for Cascading Styles Sheet and is used to add styling properties (such as font color, backgrounds, etc.) to HTML elements.
+
+    18. How to we select an element? Example - every h2 on the page
+    To select an element in CSS use the tag name h2 followed by curly brackets: h2 {}
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    A class can be used to select and specify multiple elements. An id can be used to select and specify only one element. Classes can be used to apply styling properties to multiple elements at once. Ids can be used to link an anchor tag to a single element on a web page or for integrating with javascript.
+
+    20. How do we select classes in CSS?
+    To select a class in CSS, use: .className {}
+
+    21. How do we select a p element with a single class of “human””?
+    To select a p element with class of human use: p.human {}
+
+    22. What is a parent child selector? When would this be useful? 
+    The parent child selector selects all specified elements that are direct "children" (i.e. they are nested inside of) of a parent element. An example of this would be p > span {} which would select all span elements that are children of a paragraph element. This is more specific than the descendant selector (p span {}) which selects all spans that are descendants of a p element regardless of proximity. Uses of this would be if we wanted to style only some but not all of a given element based on a parent-child relationship.
+
+    23. How do you select all links within a div with the class of sidebar?
+    div.sidebar a {}
+
+    24. What is a pseudo selector?
+    A pseudo selector is used to define a state of an element when selecting in a CSS rule. An example is p:hover {} which would apply CSS style to the paragraph element when the mouse is hovering.
+
+    25. What do we use the change the spacing between lines?
+    To change line spacing use the CSS style property: line-height: value, where value can be defined in pixels, percentage, inherit, etc.
+
+    26. What do we use to change the spacing between letters?
+    To change spacing between letters use letter-spacing: value, where value is a number in pixels or em.
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    To change everything in an element to capitals, lowercase, and capitalize use text-transform: uppercase, text-transform: lowercase, text-transform: capitalize.
+
+    28. How do I add a 1px border around my div that is dotted and black?
+    div {
+        border: dotted black 1px;
+    }
+
+    29. How do I select everything on the page? 
+    To select everything on a page use the universal selector: * {}
+
+    30. How do I write a comment in CSS?
+    To open a comment in CSS use /* to close a comment use */
+
+    31. How do I find out what file I am in, when I am using the command line? \
+    To print the current file in command line use the pwd command.
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    Use the ls command to see a list of files/folders in the current directory.
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    To remove a file with command line use the rm command. This is a permament, irreversible action and should therefore be used with caution.
+
+    34. Why should I use version control? 
+    Version control is important to maintain documentation of all the changes to a project over time in a single place. Version control is also important for projects with multiple collaborators so that multiple versions of a single project can be worked on simultaneously and later merged without altering the integrity of the original.
+
+    35. How often should I commit to github?
+    Commit should be used often to ensure that there is a consistent record of changes to a repository. A good rule of thumb is to commit every time a new section of code has been added and working properly.
+
+    36. What is the command we would use to push our repo up to github? 
+    To push a branched repo for the first time to github use: git push -u origin branch-name. After the first push the shorthand git push can be used.
+
+    37. Walk me through Lambda's git flow. 
+    Step One: Go to the project/repository that you are contributing to on Github. Example: LambaSchool/Git-for-Web-Development-project
+    Step Two: Fork the repository using the fork button in the top right of Github. This creates your own version of the repo on your account. If forking is successful your name will now appear in the repo title.
+    Step Three: Clone the repo to download all files associated with the repo to your local machine. To clone from your forked repo --> click "code" then copy the URL to clone with HTTPS. Check that your name is in the clone URL to ensure your are cloning from your forked repo.
+    Step Four: Open the command line and use cd to change directories to the folder you would like to add the repo to. Once inside, use the command git clone URL to add the repository to the directory.
+    Step Five: Change directory into the newly created repo. Once inside create a new branch of the repo using git checkout -b "branch-name". You will then be switched to the newly created branch.
+    Step Six: Once switched to your new branch you can add changes to be staged using git add . (adds all changes or you can also specify a specific file name), then commit them to the repo using git commit -m "message" where message describes the changes that were made in the commit. 
+    Step Seven: Once ready to add committed changes to the repo on Github, use git push -u origin "branch-name".
+    Step Eight: Submit a pull request to merge newly committed changes to the master repo. To create a pull request --> go to your forked repo, change the branch to your branch, then click "pull request" to create a new request. Before creating the pull request change the settings so that the pull request is set to compare your branch to the base master on YOUR FORKED repo. Add TL to the reviewer section of the pull request and add a description of the pull request. Create the request. The TL will then review the request and if approved merge it with the master.
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    2. What happens when an element is positioned absolutely? 
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
