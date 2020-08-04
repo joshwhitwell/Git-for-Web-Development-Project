@@ -1,4 +1,4 @@
-Link to finished codepen: 
+Link to finished codepen: https://codepen.io/joshwhitwell/pen/MWyWWrL?editors=1100
 
     1. What is Semantic HTML? 
     Semantic HTML refers to HTML elements that carry meaning. Examples of semantic HTML tags are <header>, <p>, and <nav>. These tags are considered semantic because the tag name designates the meaning of the element content. Semantic HTML is important for describing the content of a web page to other developers, and also for compatability with screen readers and for optimizing search engine functionality.
