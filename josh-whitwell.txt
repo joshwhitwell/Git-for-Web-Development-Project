@@ -124,7 +124,16 @@ Link to finished codepen: https://codepen.io/joshwhitwell/pen/MWyWWrL?editors=11
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+    A block element is an element that will take up the entire horizontal width on a web page unless otherwise specified by the width property. Inline elements will only take up as much width as is needed to display the content/data of the element. By default, most HTML elements are block, however examples of inline elements include span and anchor. You can change the assignment of an element to be block or inline using the display property in CSS.
+
     2. What happens when an element is positioned absolutely? 
+    An element that is positioned absolutely has a fixed position relative to its nearest ancestor element. For instance a child div that has an absolute position inside of a parent div will always have a fixed position relative to the parent div. If the element has no parent div the absolute element will be positioned absolutely relative to the html body, i.e. the element will remain fixed on the body as the page is scrolled.
+
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    Setting the display on an element to inline-block allows the element to take up only amount of space needed, while also allowing a width and height to be specified on the element if desired. Inline-block also differs from block in that it does not add a line break after the element, allowing the element to sit inline with other elements.
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    3 elements that are display block by default: paragraph, h1-h6, div. 2 elements that are display inline by default are span and anchor. 1 element that is display inline-block by default is button.
+
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+    Box model describes the basic composition of HTML web pages/individual elements. In the box model, a given element is comprised of its content (the text or image), surrounded by “padding” which is the space between the content and the “border” of the box, and finally the margin which is the space outside of the border between the element and other proximate elements. CSS can be used to add style to the components of an element in the box model. The fix for the box model is to use the property box-sizing: border-box in a universal selector on the CSS style. This will force the padding and border of an element to be included in the total width and height of the elemene, whereas by default the width and height will only be applied to the content of an element, and padding and border will be added on top of that content size.
